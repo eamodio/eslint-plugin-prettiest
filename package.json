@@ -1,0 +1,39 @@
+{
+    "name": "eslint-plugin-prettiest",
+    "description": "ESLint rules to \"fix\" prettier formatting",
+    "version": "0.0.1",
+    "author": "Eric Amodio",
+    "license": "SEE LICENSE IN LICENSE",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin",
+        "prettier"
+    ],
+    "homepage": "https://github.com/eamodio/eslint-plugin-prettiest",
+    "bugs": {
+        "url": "https://github.com/eamodio/eslint-plugin-prettiest/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eamodio/eslint-plugin-prettiest.git"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "mocha tests --recursive"
+    },
+    "dependencies": {
+        "requireindex": "1.2.0"
+    },
+    "devDependencies": {
+        "eslint": "5.15.1",
+        "mocha": "6.0.2",
+        "prettier": "1.16.4"
+    },
+    "peerDependencies": {
+        "eslint": ">=0.8.0"
+    }
+}
