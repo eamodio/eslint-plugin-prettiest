@@ -1,15 +1,13 @@
+/**
+ * @fileoverview no-block-after-closing
+ * @author Eric Amodio
+ */
 'use strict';
 
 // @ts-check
 
 const rule = require('../../../lib/rules/no-block-after-closing');
 const RuleTester = require('eslint').RuleTester;
-
-RuleTester.setDefaultConfig({
-    parserOptions: {
-        ecmaVersion: 6
-    }
-});
 
 const ruleTester = new RuleTester();
 
@@ -23,7 +21,8 @@ ruleTester.run('no-block-after-closing', rule, {
     finally {
         // finally
     }
-`
+`,
+            parserOptions: { ecmaVersion: 2015 }
         },
         {
             code: `
@@ -33,7 +32,8 @@ ruleTester.run('no-block-after-closing', rule, {
     else {
         // else
     }
-`
+`,
+            parserOptions: { ecmaVersion: 2015 }
         }
     ],
     invalid: [
@@ -45,6 +45,7 @@ ruleTester.run('no-block-after-closing', rule, {
         // finally
     }
 `,
+            parserOptions: { ecmaVersion: 2015 },
             errors: [
                 {
                     messageId: 'sameLineClose',
@@ -60,6 +61,7 @@ ruleTester.run('no-block-after-closing', rule, {
         // else
     }
 `,
+            parserOptions: { ecmaVersion: 2015 },
             errors: [
                 {
                     messageId: 'sameLineClose',

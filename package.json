@@ -1,7 +1,7 @@
 {
     "name": "eslint-plugin-prettiest",
     "description": "ESLint rules to \"fix\" prettier formatting",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Eric Amodio",
     "license": "SEE LICENSE IN LICENSE",
     "keywords": [
@@ -29,9 +29,9 @@
         "requireindex": "1.2.0"
     },
     "devDependencies": {
-        "eslint": "5.15.1",
-        "mocha": "6.0.2",
-        "prettier": "1.16.4"
+        "eslint": "5.16.0",
+        "mocha": "6.1.4",
+        "prettier": "1.18.2"
     },
     "peerDependencies": {
         "eslint": ">=0.8.0"
